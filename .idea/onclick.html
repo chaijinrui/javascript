@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onclick</title>
+    <!--    <script type="text/javascript" src=".js/onclick-js1.js"></script>-->
+    <script type="text/javascript">
+
+        // // 页面加载完成后，再进行动态绑定
+        window.onload = function () {
+            var elementById = document.getElementById("1");
+            elementById.onclick = function () {
+                alert("hi!!!!!!!!!")
+            }
+        }
+    </script>
+</head>
+<body>
+<!--&lt;!&ndash;动态注册&ndash;&gt;-->
+<!--1. 先拿到id=btn01的button对应的dom对象-->
+<!--2. 通过dom对象动态的绑定onclick事件-->
+<!--3. document.getElementById方法获取都没对象-->
+<button id="1"> hi按钮</button>
+</body>
+</html>
