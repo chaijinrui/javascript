@@ -9,4 +9,4 @@ function cal() {
     return sum
 }
 
-alert("总和为 " + cal(1, 2, "1", 3))
+alert("总和为 " + cal(1, 2, "1", 3,4))
