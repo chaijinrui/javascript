@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onblur</title>
+    <script type="text/javascript">
+        <!--        页面加载完完毕，完成动态绑定-->
+        window.onload = function () {
+            const elementById = document.getElementById("name2");
+            elementById.onblur = function () {
+                // 获取输入框的值并转化成大写
+                // 再将大写值赋给输入的值
+                elementById.value = elementById.value.toUpperCase()
+                console.log("change")
+            }
+        }
+    </script>
+</head>
+<body>
+<!--使用动态注册-->
+<input type="text" id="name2"><br>
+</body>
+</html>

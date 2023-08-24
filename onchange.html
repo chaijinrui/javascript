@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onchange</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            var elementById = document.getElementById("select01");
+            elementById.onchange = function () {
+                alert("工资变化了")
+            }
+        }
+    </script>
+</head>
+<body>
+你当前的工资水平：
+<!--动态注册-->
+<select id="select01" onchange="f1()">
+    <option>范围是</option>
+    <option>1k</option>
+    <option>2k</option>
+    <option>3k</option>
+</select><br>
+你的年龄：
+</body>
+</html>
