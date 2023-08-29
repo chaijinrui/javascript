@@ -3,13 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>表单提交事件</title>
-</head>
-<body>
-<h1>注册用户1</h1>
-name：<input type="text" name="姓名">
+    <script type="text/javascript">
+        function register() {
+            var elementById = document.getElementById(1);
+            if (elementById.value == "") {
+                alert("hhhhhhhhhhhhhhh")
+                return false
+            }
+        }
 
-<h2>注册用户2</h2>
-password：<input type="text" name="密码">
+        window.onload = function () {
+            // 得到from2表单的dom对象
+            var from2 = document.getElementById("from2");
+            console.log(from2.value)
+            // 给from2表单绑定onsubmit事件
+            from2.onsubmit=function () {
+                if (from2.name111.value==""){
+                    alert("wocao")
+                    return false
+                }
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+<form action="/Ok.html" target="_blank" onsubmit="return register()">
+    <!--    静态注册表单的事件-->
+    <h1>注册用户1</h1>
+    name：<input type="text" id="1" name="姓名"><br>
+    password：<input type="text" id="2" name="密码"><br>
+    <input type="submit" value="提交">
+</form>
+
+<form action="/Ok.html" target="_blank" id="from2">
+    <!--    动态注册表单的事件-->
+    <h2 >注册用户2</h2>
+    name：<input type="text" id="11" name="name111"><br>
+    password：<input type="text" id="22" name="密码1"><br>
+    <input type="submit" value="提交">
+</form>
+
 
 </body>
 </html>
