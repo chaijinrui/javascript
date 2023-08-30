@@ -17,11 +17,12 @@
             var from2 = document.getElementById("from2");
             console.log(from2.value)
             // 给from2表单绑定onsubmit事件
-            from2.onsubmit=function () {
-                if (from2.name111.value==""){
-                    alert("wocao")
+            from2.onsubmit = function () {
+                if (from2.name111.value == "" || from2.password111.value == "") {
+                    alert("请输入")
                     return false
                 }
+                return true
             }
         }
     </script>
@@ -40,9 +41,9 @@
 
 <form action="/Ok.html" target="_blank" id="from2">
     <!--    动态注册表单的事件-->
-    <h2 >注册用户2</h2>
+    <h2>注册用户2</h2>
     name：<input type="text" id="11" name="name111"><br>
-    password：<input type="text" id="22" name="密码1"><br>
+    password：<input type="text" id="22" name="password111"><br>
     <input type="submit" value="提交">
 </form>
 
