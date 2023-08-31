@@ -6,31 +6,83 @@
     <link type="text/css" rel="stylesheet" href="css/html-dom.css">
 </head>
 <body>
-你会的运动项目：<br>
-<input type="checkbox" value="zq" name="sports">足球
-<input type="checkbox" value="tq" name="sports">台球
-<input type="checkbox" value="ppq" name="sports">乒乓球
-<hr>
-你的前女友是谁：<br>
-<select>
-    <option>----女友----</option>
-    <option>第一任</option>
-    <option>第二任</option>
-    <option>第三任</option>
-    <option>第四任</option>
-</select>
-<hr>
-你的编程语言是：
-<!--ul、li是无序列表-->
-<ul>
-    <li>Java</li>
-    <li>PHP</li>
-    <li>C++</li>
-    <li>Python</li>
-</ul>
-<hr>
-<!--p元素会自动在内容上下创造一些空白-->
-<p>个人介绍</p><br>
-<textarea>个人介绍</textarea>
+<div class="bodydiv">
+    <div id="111">
+        <p>
+            你会的运动项目：
+        </p>
+
+        <!--    用label包起来后，点击字同样有选择的效果    -->
+        <label>
+            <input type="checkbox" value="zq" name="sports">足球
+        </label>
+        <label><input type="checkbox" value="tq" name="sports">台球</label>
+        <label><input type="checkbox" value="ppq" name="sports">乒乓球</label>
+
+
+        <hr>
+        <p>
+            你的前女友是谁：
+        </p>
+        <select>
+            <option>----女友----</option>
+            <option>第一任</option>
+            <option>第二任</option>
+            <option>第三任</option>
+            <option>第四任</option>
+        </select>
+        <hr>
+        <p>
+            你的编程语言是：
+        </p>
+        <!--ul、li是无序列表-->
+        <ul>
+            <li>Java</li>
+            <li>PHP</li>
+            <li>C++</li>
+            <li>Python</li>
+        </ul>
+        <br>
+        <hr>
+        <!--p元素会自动在内容上下创造一些空白-->
+        <p>个人介绍</p>
+        <textarea>个人介绍</textarea>
+    </div>
+
+</div>
+<div class="buttondiv">
+    <!--    div 块级区域标签，可以把文档分割为独立的、不同的部分-->
+    <div>
+        <button id="btn01">查找id=java节点</button>
+    </div>
+    <div>
+        <button id="btn02">查找所有option节点</button>
+    </div>
+    <div>
+        <button id="btn03">查找name=sport的节点</button>
+    </div>
+    <div>
+        <button id="btn04">查找id=language 下所有li节点</button>
+    </div>
+    <div>
+        <button id="btn05">返回id=sel01 的所有子节点</button>
+    </div>
+    <div>
+        <button id="btn06">返回id=sel01 的第一个子节点</button>
+    </div>
+    <div>
+        <button id="btn07">返回id=java 的父节点</button>
+    </div>
+    <div>
+        <button id="btn08">返回id=ct 的前后兄弟节点</button>
+    </div>
+    <div>
+        <button id="btn09">读取id=ct 的 value 属性值</button>
+    </div>
+    <div>
+        <button id="btn10">设置#person的文本域</button>
+    </div>
+</div>
+
 </body>
 </html>

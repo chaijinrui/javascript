@@ -1,0 +1,42 @@
+#111{
+    width:400px;
+    border-width: 1px;
+    margin-bottom: 10px;
+    padding: 10px;
+    float: left;
+}
+
+/*class为bodydiv的标签左对齐*/
+.bodydiv {
+    float: left;
+}
+
+/*class为buttondiv的标签右对齐*/
+.buttondiv {
+    float: right;
+}
+
+
+
+ul {
+    /*
+    list-style-type----前面的展示样式
+    margin----宽度
+    padding-----高度
+    */
+    list-style-type: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*bodydiv类的li做样式更改
+border-style: solid;
+    border-width: 1px;
+    边框风格和边框粗细*/
+.bodydiv li {
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    margin: 5px;
+    float: left;
+}
