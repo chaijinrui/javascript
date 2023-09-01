@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>html-dom</title>
     <link type="text/css" rel="stylesheet" href="css/html-dom.css">
+    <script type="text/javascript" src="js/html-dom.js"></script>
 </head>
 <body>
 <div class="bodydiv">
@@ -14,7 +15,7 @@
 
         <!--    用label包起来后，点击字同样有选择的效果    -->
         <label>
-            <input type="checkbox" value="zq" name="sports">足球
+            <input type="checkbox" value="zq" name="sports" checked="checked">足球
         </label>
         <label><input type="checkbox" value="tq" name="sports">台球</label>
         <label><input type="checkbox" value="ppq" name="sports">乒乓球</label>
@@ -24,20 +25,20 @@
         <p>
             你的前女友是谁：
         </p>
-        <select>
-            <option>----女友----</option>
-            <option>第一任</option>
-            <option>第二任</option>
-            <option>第三任</option>
-            <option>第四任</option>
+        <select id="sel01">
+            <option>---女友---</option>
+            <option>艳红</option>
+            <option id="ct" value="春桃菇凉">春桃</option>
+            <option>春花</option>
+            <option>桃红</option>
         </select>
         <hr>
         <p>
             你的编程语言是：
         </p>
         <!--ul、li是无序列表-->
-        <ul>
-            <li>Java</li>
+        <ul id="language">
+            <li id="java">Java~~~</li>
             <li>PHP</li>
             <li>C++</li>
             <li>Python</li>
