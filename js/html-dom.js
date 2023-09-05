@@ -1,4 +1,12 @@
 window.onload = function () {
+    // 测试切换被选项
+    // var elementById2 = document.getElementById("btn07");
+    // btn07.onclick=function () {
+    //     var elementById = document.getElementById("ct");
+    //     elementById.selected=true
+    // }
+
+
     // 使用动态绑定
 // 1. 完成第一个按钮的绑定
 // 查找id=java节点
@@ -26,7 +34,7 @@ window.onload = function () {
     btn03.onclick = function () {
         var elementsByName = document.getElementsByName("sports");
         for (let i = 0; i < elementsByName.length; i++) {
-            // 做一个筛选
+            // 做一个筛选，只弹出被选中的
             if (elementsByName[i].checked) {
                 alert(elementsByName[i].value)
             }
@@ -63,15 +71,39 @@ window.onload = function () {
         alert(elementById.firstChild)
         alert(elementById[0].innerText)
     }
-// 7.返回id=java 的父节点
+
+// 7.返回id=java 的父节点的文本子节点
     var btn07 = document.getElementById("btn07");
     btn07.onclick = function () {
-        console.log("没有绑定上")
         var elementById1 = document.getElementById("java");
-        alert(elementById1.parentElement.innerText)
+        var childNodes = elementById1.parentNode.childNodes;
+        for (let i = 0; i < childNodes.length; i++) {
+            if (childNodes[i].innerText !== undefined)
+                alert(childNodes[i].innerHTML)
+        }
     }
 
+    // 8.返回id=ct 的前后兄弟节点
+    var btn08 = document.getElementById("btn08");
+    btn08.onclick = function () {
+        var elementById = document.getElementById("ct");
+        alert(elementById.previousSibling.previousSibling.innerHTML)
+        alert(elementById.nextSibling.nextSibling.innerHTML)
+    }
 
+    // 9. 读取id=ct 的 value 属性值
+    var btn09 = document.getElementById("btn09");
+    btn09.onclick = function () {
+        var elementById = document.getElementById("ct");
+        alert(elementById.value)
+    }
+
+//     10.设置#person的文本域
+    var btn10 = document.getElementById("btn10");
+    btn10.onclick = function () {
+        var elementById = document.getElementById("text");
+        elementById.innerText = "hhhhhhhhh"
+    }
 }
 
 

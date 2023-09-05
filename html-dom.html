@@ -14,11 +14,12 @@
         </p>
 
         <!--    用label包起来后，点击字同样有选择的效果    -->
+        <!--        checked="checked" 表示默认勾选-->
         <label>
-            <input type="radio" value="zq" name="sports" checked="checked">足球
+            <input type="checkbox" value="zq" name="sports" checked="checked">足球
         </label>
-        <label><input type="radio" value="tq" name="sports">台球</label>
-        <label><input type="radio" value="ppq" name="sports">乒乓球</label>
+        <label><input type="checkbox" value="tq" name="sports" checked="checked">台球</label>
+        <label><input type="checkbox" value="ppq" name="sports">乒乓球</label>
 
 
         <hr>
@@ -47,7 +48,7 @@
         <hr>
         <!--p元素会自动在内容上下创造一些空白-->
         <p>个人介绍</p>
-        <textarea>个人介绍</textarea>
+        <textarea id="text">个人介绍</textarea>
     </div>
 
 </div>
@@ -72,7 +73,7 @@
         <button id="btn06">返回id=sel01 的第一个子节点</button>
     </div>
     <div>
-        <button id="btn07">返回id=java 的父节点</button>
+        <button id="btn07">返回id=java 的父节点的所有子节点</button>
     </div>
     <div>
         <button id="btn08">返回id=ct 的前后兄弟节点</button>
