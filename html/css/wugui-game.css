@@ -1,0 +1,16 @@
+/*表格边框*/
+
+table, th, td
+{
+    border: 1px solid black;
+}
+
+/*图片1位置*/
+#img1{
+    margin : 100px 1000px 0px 1000px
+}
+
+/*图片2位置*/
+#img2{
+    margin : 100px 1000px 0px 1000px
+}
