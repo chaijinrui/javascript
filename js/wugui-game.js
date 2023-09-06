@@ -2,6 +2,7 @@ window.onload = function () {
 
     // 通过修改top值来实现移动
     var wugui = document.getElementById("img1")
+    var tuzi = document.getElementById("img2");
     console.log(wugui.innerHTML)
 
     // window.getComputedStyle是获取对象的css属性的值
@@ -59,7 +60,7 @@ window.onload = function () {
 
     // 让图片向下移动的代码
     var but4 = document.getElementById("but4");
-    alert("高度"+document.documentElement.clientHeight)
+    // alert("高度"+document.documentElement.clientHeight)
     but4.onclick = function () {
         // 限定下范围
         if (wugui_top < document.documentElement.clientHeight) {
@@ -71,5 +72,10 @@ window.onload = function () {
             alert("不能再往下了")
     }
 
-
+//     获取乌龟、兔子的长和宽，兔子为被覆盖的情况
+//     覆盖的情况：
+//     1.乌龟-兔子<兔子高 & 乌龟-兔子<兔子宽
+//     2.兔子-乌龟<兔子高 & 兔子-乌龟<兔子宽
+//     3.乌龟-兔子<兔子高 & 兔子-乌龟<兔子宽
+//     4.兔子-乌龟<兔子高 & 乌龟-兔子<兔子宽
 }
