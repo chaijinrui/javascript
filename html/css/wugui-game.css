@@ -1,16 +1,23 @@
 /*表格边框*/
 
-table, th, td
-{
+table, th, td {
     border: 1px solid black;
 }
 
 /*图片1位置*/
-#img1{
-    margin : 100px 1000px 0px 1000px
+#img1 {
+    /*以下两个属性针对图片的左上角
+    top表示纵向距离离窗口原点（页面左上角）距离
+    left表示横向距离离窗口原点（页面左上角）距离*/
+    /*<!--style="position: absolute" 表示绝对定位-->*/
+    left: 500px;
+    top: 200px;
+    position: absolute;
 }
 
 /*图片2位置*/
-#img2{
-    margin : 100px 1000px 0px 1000px
+#img2 {
+    left: 500px;
+    top: 500px;
+    position: absolute;
 }
